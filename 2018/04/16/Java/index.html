@@ -89,10 +89,12 @@
 <meta property="og:site_name" content="Mr_Ji&#39;s Blog">
 <meta property="og:description" content="1.Hello Java.java代码：1234567public class HelloWorld&amp;#123;	public static void main(String[] args) 	&amp;#123;		System.out.println(&quot;Hello Java!&quot;);	&amp;#125;&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-17T06:08:33.000Z">
+<meta property="og:image" content="http://www.mrjiluo.cn/img/cfb.png">
+<meta property="og:updated_time" content="2018-04-17T06:37:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java">
 <meta name="twitter:description" content="1.Hello Java.java代码：1234567public class HelloWorld&amp;#123;	public static void main(String[] args) 	&amp;#123;		System.out.println(&quot;Hello Java!&quot;);	&amp;#125;&amp;#125;">
+<meta name="twitter:image" content="http://www.mrjiluo.cn/img/cfb.png">
 
 
 
@@ -348,7 +350,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  129
+                  256
                 </span>
               
 
@@ -389,6 +391,10 @@
 <a id="more"></a>
 <hr>
 <h1 id="2-排序-java"><a href="#2-排序-java" class="headerlink" title="2.排序.java"></a>2.排序.java</h1><h2 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Paixu</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function">	</span>&#123;  <span class="comment">//该程序为了实现x,y,z从小到大排序</span></span><br><span class="line">		<span class="keyword">int</span> x=<span class="number">10</span>,y=<span class="number">16</span>,z=<span class="number">2</span>,t=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;y)</span><br><span class="line">		&#123;</span><br><span class="line">			t=x;</span><br><span class="line">			x=y;</span><br><span class="line">			y=t;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;z)</span><br><span class="line">		&#123;</span><br><span class="line">			t=x;</span><br><span class="line">			x=z;</span><br><span class="line">			z=t;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(y&gt;z)</span><br><span class="line">		&#123;</span><br><span class="line">			t=y;</span><br><span class="line">			y=z;</span><br><span class="line">			z=t;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.print(<span class="string">"x="</span>+x+<span class="string">" "</span>+<span class="string">"y="</span>+y+<span class="string">" "</span>+<span class="string">"z="</span>+z);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="3-乘法表"><a href="#3-乘法表" class="headerlink" title="3.乘法表"></a>3.乘法表</h1><h2 id="代码：-2"><a href="#代码：-2" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">cfb</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> a;</span><br><span class="line">		<span class="keyword">int</span> b;</span><br><span class="line">		<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(a=<span class="number">1</span>;a&lt;<span class="number">10</span>;a++)  <span class="comment">//外循环控制第一个数</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(b=<span class="number">1</span>;b&lt;=a;b++)  <span class="comment">//内循环控制第二个数</span></span><br><span class="line">			&#123;</span><br><span class="line">				sum=a*b;  <span class="comment">//计算结果，将第一个数和第二个数相乘</span></span><br><span class="line">				System.out.print(a+<span class="string">"*"</span>+b+<span class="string">"="</span>+sum+<span class="string">" "</span>);  <span class="comment">//输出乘法表的每一行数据</span></span><br><span class="line">			&#125;</span><br><span class="line">			System.out.print(<span class="string">"\n"</span>);  <span class="comment">//在每一行数据输出完成后进行换行</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="输出结果："><a href="#输出结果：" class="headerlink" title="输出结果："></a>输出结果：</h2><p><img src="/img/cfb.png"></p>
+
       
     </div>
     
@@ -584,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Hello-Java-java"><span class="nav-number">1.</span> <span class="nav-text">1.Hello Java.java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-排序-java"><span class="nav-number">2.</span> <span class="nav-text">2.排序.java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Hello-Java-java"><span class="nav-number">1.</span> <span class="nav-text">1.Hello Java.java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-排序-java"><span class="nav-number">2.</span> <span class="nav-text">2.排序.java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-乘法表"><span class="nav-number">3.</span> <span class="nav-text">3.乘法表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码：-2"><span class="nav-number">3.1.</span> <span class="nav-text">代码：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出结果："><span class="nav-number">3.2.</span> <span class="nav-text">输出结果：</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -639,7 +645,7 @@
 </div>
 丨<div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共207字</span>
+  <span class="post-count">博客全站共334字</span>
 </div>
 </div>
 
