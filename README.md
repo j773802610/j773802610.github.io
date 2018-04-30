@@ -5,7 +5,7 @@ public class hello
 {
   public static void main(String[] args)
   {
-    System.out.print("HelloWorld");
+    System.out.print("这是我第一次用GitHub完成博客的搭建");
   }
 }
 ```
